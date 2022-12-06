@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>site monster hunter</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="plugins/jquery.bxslider.css">
+    <link rel="stylesheet" href="plugins/magnific.popup.css">
+    <script src="plugins/jquery.min.js"></script>
+    <script src="plugins/jquery.bxslider.min.js"></script>
+    <script src="plugins/magnif.poup.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#slider').bxSlider({
+                mode: 'fade',
+                speed: '1000',
+                auto: true
+            });
+            $('#fotos').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                closeOnContentClick: false,
+                closeBtnInside: false,
+                mainClass: 'mfp-with-zoom mfp-img-mobile',
+                image: {
+                    verticalFit: true
+                },
+                gallery: {
+                    enabled: true
+                },
+                zoom: {
+                    enabled: true,
+                    duration: 300, // don't foget to change the duration also in CSS
+                    opener: function (element) {
+                        return element.find('img');
+                    }
+                }
+
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header id="cabecalho">
+        <div class="container">
+            <a href="#"><img src="../imagens/logo_site.png" alt="Logo Monster Hunters" id="logo"></a>
+            <nav>
+                <ul>
+                  <li><a href="../index.html" class="active">Home</a></li>
+                    <li><a href="../internas/monsters.html">Monstros</a></li>
+                    <li><a href="../internas/personagens.html">Personagens</a></li>
+                    <li><a href="../internas/historia.html">Historia</a></li>
+                    <li><a href="../internas/armas.html">armas</a></li>
+                    <li><a href="../internas/areas.html">Areas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section">
+      <h3 class="conteudo-secundario-titulo">Armas</h3>
+    </section>
+    <section id="personagens" class="center">
+
+    <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="../imagens/fotos/armas/weapon01.png" alt="Avatar" style="width:300px;height:300px;">
+          </div>
+          <div class="flip-card-back">
+            <h1 class="conteudo-secundario-titulo">Espadão</h1>
+            <p class="conteudo-secundario-paragrafo">
+              Uma arma cortante para um estilo de combate focado no ataque.
+              As habilidades de carga aumentam o nível do Medidor de Carga, permitindo o uso de habilidades ainda melhores.
+            </p>
+                
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="../imagens/fotos/armas/weapon02.png" alt="Avatar" style="width:300px;height:300px;">
+          </div>
+          <div class="flip-card-back">
+            <h1 class="conteudo-secundario-titulo">Martelo</h1>
+            <p class="conteudo-secundario-paragrafo">
+            Uma arma de contusão perfeita para quebrar partes do corpo dos monstros. Vencer uma disputa mano a mano aumenta o nível do Medidor de Carga, permitindo o uso de habilidades ainda melhores.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="../imagens/fotos/armas/weapon03.png" alt="Avatar" style="width:300px;height:300px;">
+          </div>
+          <div class="flip-card-back">
+            <h1 class="conteudo-secundario-titulo">Espada e Escudo</h1>
+            <p class="conteudo-secundario-paragrafo">
+              Uma arma cortante e um escudo, oferecendo um bom equilíbrio entre ataque e defesa. Permite o uso de habilidades agressivas e cortantes e, ao mesmo tempo, reduz o dano que você sofre. Algumas habilidades bloqueiam ou aparam ataques.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="../imagens/fotos/armas/weapon04.png" alt="Avatar" style="width:300px;height:300px;">
+          </div>
+          <div class="flip-card-back">
+            <h1 class="conteudo-secundario-titulo">Berrante de Caça</h1>
+            <p class="conteudo-secundario-paragrafo">
+            Uma arma de contusão otimizada para ajudar sua equipe. Além dos ataques comuns, oferece uma série de habilidades para dar apoio a aliados. As habilidades disponíveis para você dependem da melodia do berrante.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="../imagens/fotos/armas/weapon05.png" alt="Avatar" style="width:300px;height:300px;">
+          </div>
+          <div class="flip-card-back">
+            <h1 class="conteudo-secundario-titulo">Arco</h1>
+            <p class="conteudo-secundario-paragrafo">
+              Uma arma perfurante capaz de causar status anormais. Use uma habilidade de carga para ter uma chance maior de causar um status anormal em seu oponente com o seu próximo ataque. Também há a chance de você dar um disparo potente após seu ataque.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="../imagens/fotos/armas/weapon06.png" alt="Avatar" style="width:300px;height:300px;">
+          </div>
+          <div class="flip-card-back">
+            <h1 class="conteudo-secundario-titulo">Lançarma</h1>
+            <p class="conteudo-secundario-paragrafo">
+              Esta arma perfurante dispara projéteis e permite que você acumule munição sempre que atacar. Ataques normais não são eficazes para carregar o Medidor de Afinidade, mas usar munição para lançar uma habilidade e vencer um confronto direto encherá muito o Medidor de Afinidade. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>

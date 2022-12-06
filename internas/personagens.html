@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>site monster hunter</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="plugins/jquery.bxslider.css">
+    <link rel="stylesheet" href="plugins/magnific.popup.css">
+    <script src="plugins/jquery.min.js"></script>
+    <script src="plugins/jquery.bxslider.min.js"></script>
+    <script src="plugins/magnif.poup.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#slider').bxSlider({
+                mode: 'fade',
+                speed: '1000',
+                auto: true
+            });
+            $('#fotos').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                closeOnContentClick: false,
+                closeBtnInside: false,
+                mainClass: 'mfp-with-zoom mfp-img-mobile',
+                image: {
+                    verticalFit: true
+                },
+                gallery: {
+                    enabled: true
+                },
+                zoom: {
+                    enabled: true,
+                    duration: 300, // don't foget to change the duration also in CSS
+                    opener: function (element) {
+                        return element.find('img');
+                    }
+                }
+
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header id="cabecalho">
+        <div class="container">
+            <a href="#"><img src="../imagens/logo_site.png" alt="Logo Monster Hunters" id="logo"></a>
+            <nav>
+                <ul>
+                  <li><a href="../index.html" class="active">Home</a></li>
+                  <li><a href="../internas/monsters.html">Monstros</a></li>
+                  <li><a href="../internas/personagens.html">Personagens</a></li>
+                  <li><a href="../internas/historia.html">Historia</a></li>
+                  <li><a href="../internas/armas.html">armas</a></li>
+                  <li><a href="../internas/areas.html">Areas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section">
+      <h3 class="conteudo-secundario-titulo">Personagens</h3>
+    </section>
+    <section id="personagens" class="center">
+      
+    <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="../imagens/fotos/Personagens/index_character01.jpg" alt="Avatar" style="width:300px;height:300px;">
+          </div>
+          <div class="flip-card-back">
+            <h1 class="conteudo-secundario-titulo">Protagonista</h1>
+            <p class="conteudo-secundario-paragrafo">
+                Você nasceu e cresceu em Mahana, uma aldeia em uma ilha tropical, e vive como os Montadores.
+                Seu avô, Red, formou um vínculo com o Ratha Guardião, o respeitado monstro que protege a ilha.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="../imagens/fotos/Personagens/index_character02.jpg" alt="Avatar" style="width:300px;height:300px;">
+          </div>
+          <div class="flip-card-back">
+            <h1 class="conteudo-secundario-titulo">Ena</h1>
+            <p class="conteudo-secundario-paragrafo">
+              Uma garota Serperiana que conheceu Red, seu avô.
+              Na esperança de se unir a você para descobrir a verdade por trás dos recentes eventos ambientais estranhos, ela lhe confia um ovo de Rathalos que supostamente contém um monstro lendário destinado a destruir o mundo.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="../imagens/fotos/Personagens/index_character03.jpg" alt="Avatar" style="width:300px;height:300px;">
+          </div>
+          <div class="flip-card-back">
+            <h1 class="conteudo-secundario-titulo">Navirou</h1>
+            <p class="conteudo-secundario-paragrafo">
+              Um Felyno que viajou muito e tem um rosto inesquecível. Vocês se conhecem enquanto ele viaja, tentando descobrir o motivo dos acontecimentos estranhos. Ele é um companheiro aventureiro e otimista que age como o seu guia, e está determinado a ajudá-lo em seu objetivo de se tornar um Montador.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="../imagens/fotos/Personagens/index_character04.jpg" alt="Avatar" style="width:300px;height:300px;">
+          </div>
+          <div class="flip-card-back">
+            <h1 class="conteudo-secundario-titulo">Red</h1>
+            <p class="conteudo-secundario-paragrafo">
+              Seu avô, já falecido há muitos anos.
+              Para descobrir a verdade sobre os misteriosos acontecimentos, ele passou a vida toda viajando pelo mundo com o Monstie dele: o Ratha Guardião.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="../imagens/fotos/Personagens/index_character05.jpg" alt="Avatar" style="width:300px;height:300px;">
+          </div>
+          <div class="flip-card-back">
+            <h1 class="conteudo-secundario-titulo"> Kayna</h1>
+            <p class="conteudo-secundario-paragrafo">
+              Uma Montadora da Aldeia Mahana.
+              O Monstie dela é um Velocídrome chamado Avmar. Ela sempre faz o que quer e tem uma personalidade agradável.
+              Ela lhe ensinará o básico sobre ser um Montador, e agirá como sua mentora durante a sua jornada.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="../imagens/fotos/Personagens/index_character06.jpg" alt="Avatar" style="width:300px;height:300px;">
+          </div>
+          <div class="flip-card-back">
+            <h1 class="conteudo-secundario-titulo"> Alwin</h1>
+            <p class="conteudo-secundario-paragrafo">
+            Um Montador Serperiano da Aldeia Rutoh.
+            O Monstie dele é um Legiana chamado Shaulk. Ele é bonito e raramente fala. Embora aja de um jeito frio e reservado, ele acaba gostando de você por você ser neto de Red, o primeiro amigo humano que ele teve.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>

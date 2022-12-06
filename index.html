@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>site monster hunter</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="plugins/jquery.bxslider.css">
+    <link rel="stylesheet" href="plugins/magnific.popup.css">
+    <script src="plugins/jquery.min.js"></script>
+    <script src="plugins/jquery.bxslider.min.js"></script>
+    <script src="plugins/magnif.poup.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#slider').bxSlider({
+                mode: 'fade',
+                speed: '1000',
+                auto: true
+            });
+            $('#fotos').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                closeOnContentClick: false,
+                closeBtnInside: false,
+                mainClass: 'mfp-with-zoom mfp-img-mobile',
+                image: {
+                    verticalFit: true
+                },
+                gallery: {
+                    enabled: true
+                },
+                zoom: {
+                    enabled: true,
+                    duration: 300, // don't foget to change the duration also in CSS
+                    opener: function (element) {
+                        return element.find('img');
+                    }
+                }
+
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header id="cabecalho">
+        <div class="container">
+            <a href="#"><img src="imagens/logo_site.png" alt="Logo Monster Hunters" id="logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="internas/monsters.html">Monstros</a></li>
+                    <li><a href="internas/personagens.html">Personagens</a></li>
+                    <li><a href="internas/historia.html">Historia</a></li>
+                    <li><a href="internas/armas.html">armas</a></li>
+                    <li><a href="internas/areas.html">Areas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="banners">
+        <div class="container">
+            <ul id="slider">
+                <li><img src="imagens/fotos/background/movie_thumb_pv6_gl.jpg" alt="Banner 01"></li>
+                <li><img src="imagens/fotos/background/movie_thumb_pv7_gl.jpg" alt="Banner 02"></li>
+                <li><img src="imagens/fotos/background/movie_thumb_tu5_gl.jpg" alt="Banner 03"></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="historia">
+        <div class="container">
+            <h2 class="titulo-secao">O mundo vibrante de Monster Hunter Stories 2</h2>
+
+            <div>
+                <div>
+                    <img class="container" src="imagens/fotos/background/foto1.jpg" alt="">
+                    <div class="meio">
+                        <p>
+                            Ajude monstros a nascer e crescer e viva ao lado deles como um Montador de Monstros neste RPG superdivertido no universo de Monster Hunter.
+                        </p>
+                        <p>
+                            Nossa história épica começa com o desaparecimento em massa dos Rathalos ao redor do mundo. No início, você se depara com uma garota Serperiana que conheceu seu ilustre avô, Red. Ela foi encarregada de cuidar de um ovo, mas o que há
+                            dentro dele? O destino do mundo está em jogo na emocionante narrativa sobre as Asas da Ruína.
+                        </p>
+                    </div>
+                </div>
+
+    </section>
+    <section id="trailer">
+        <div class="container">
+            <h2 class="titulo-secao">Trailer de Monster Hunter Stories 2</h2>
+
+            <iframe id="bg_movie" data-movie="erKukT-qYE0" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="MONSTER HUNTER STORIES 2 - background video" width="640" height="360" src="https://www.youtube.com/embed/erKukT-qYE0?autoplay=1&amp;enablejsapi=1&amp;controls=0&amp;modestbranding=1&amp;loop=1&amp;playsinline=1&amp;wmode=transparent&amp;origin=https%3A%2F%2Fwww.monsterhunter.com&amp;widgetid=1" data-gtm-yt-inspected-24="true" data-gtm-yt-inspected-29="true" data-gtm-yt-inspected-32="true" data-gtm-yt-inspected-32202730_118="true"></iframe>s
+        </div>
+
+
+    </section>
+
+    <footer id="rodape">
+        <div class="container">
+
+            <p>UniRios - Centro Universitário do Rio São Francisco</p>
+
+
+            <p>Site construído com o objetivo de ser instrumento de avaliação para a disciplina de IATW</p>
+
+            <p>Curso Sistema de Informação</p>
+
+            <p>1º périodo - Semestre 2022.2</p>
+
+            <p>Aluno: Emilly Karoline</p>
+
+        </div>
+    </footer>
+</body>
+
+</html>

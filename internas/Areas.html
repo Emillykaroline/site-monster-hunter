@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>site monster hunter</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="plugins/jquery.bxslider.css">
+    <link rel="stylesheet" href="plugins/magnific.popup.css">
+    <script src="plugins/jquery.min.js"></script>
+    <script src="plugins/jquery.bxslider.min.js"></script>
+    <script src="plugins/magnif.poup.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#slider').bxSlider({
+                mode: 'fade',
+                speed: '1000',
+                auto: true
+            });
+            $('#fotos').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                closeOnContentClick: false,
+                closeBtnInside: false,
+                mainClass: 'mfp-with-zoom mfp-img-mobile',
+                image: {
+                    verticalFit: true
+                },
+                gallery: {
+                    enabled: true
+                },
+                zoom: {
+                    enabled: true,
+                    duration: 300, // don't foget to change the duration also in CSS
+                    opener: function (element) {
+                        return element.find('img');
+                    }
+                }
+
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header id="cabecalho">
+        <div class="container">
+            <a href="#"><img src="../imagens/logo_site.png" alt="Logo Monster Hunters" id="logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html" class="active">Home</a></li>
+                    <li><a href="../internas/monsters.html">Monstros</a></li>
+                    <li><a href="../internas/personagens.html">Personagens</a></li>
+                    <li><a href="../internas/historia.html">Historia</a></li>
+                    <li><a href="../internas/armas.html">armas</a></li>
+                    <li><a href="../internas/areas.html">Areas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    main class="conteudo-historia">
+          <section class="conteudo-principal">
+            <div class="conteudo-principal-escrito">
+              <h1 class="conteudo-principal-escrito-titulo">Novos Cenários</h1>
+              <h2 class="conteudo-principal-escrito-subtitulo">Com paisangens de tirar o folêgo!</h2>
+              
+            </div>
+           <img class="conteudo-principal-imagem" src="../imagens/fotos/background/monsters.png" alt="">
+          </section>
+      
+          <section class="conteudo-secundario">
+            <h3 class="conteudo-secundario-titulo">Lista de Áreas</h3>
+            <img class="areas" src="../imagens/fotos/areas/area01.jpg" alt="">
+            <h3 class="conteudo-secundario-titulo">Loloska</h3>
+            <p class="conteudo-secundario-paragrafo">
+                Esta região fria está localizada próximo a Alcala. É conhecida por sua montanha gelada, que se eleva sobre os campos nevados ao redor.</p>
+                <img class="areas" src="../imagens/fotos/areas/area03.jpg" alt="">
+                <h3 class="conteudo-secundario-titulo">Jardim Pomore</h3>
+            <p class="conteudo-secundario-paragrafo">
+                Esta área deslumbrante está repleta de flores e árvores em plena floração. Ande por um dos caminhos decorados com flores de cerejeira para encontrar a Trilha do Vulcão Terga.</p>
+                <img class="areas" src="../imagens/fotos/areas/area04.jpg" alt="">
+                <h3 class="conteudo-secundario-titulo">Terga</h3>
+            <p class="conteudo-secundario-paragrafo">
+                A Trilha do Vulcão Terga o levará até a base do vulcão. Uma caverna com cristais formados pelo intenso calor da lava vulcânica pode ser encontrada aqui.</p>
+            <img class="areas" src="../imagens/fotos/areas/area05.jpg" alt="">
+            <h3 class="conteudo-secundario-titulo">Torre de Lamure</h3>
+            <p class="conteudo-secundario-paragrafo">Torre de Lamure
+                Esta torre em ruínas está abandonada em um canto do Deserto de Lamure. Embora os humanos tenham partido há muito tempo, vários monstros agora espreitam seus corredores.</p>
+            <img class="areas" src="../imagens/fotos/areas/area06.jpg" alt="">
+            <h3 class="conteudo-secundario-titulo">Alcala</h3>
+            <p class="conteudo-secundario-paragrafo">
+                Uma região vasta com terreno rochoso. Esta área contém muitas florestas primitivas, inalteradas desde os tempos antigos.</p>
+          </section>
+        </main>
+      
+        <footer class="rodape">
+          <img class="rodape-imagem" src="../imagens/logo_site.png">
+        </footer>
+      </body>
+      
+      </html>

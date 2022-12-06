@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>site monster hunter</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="plugins/jquery.bxslider.css">
+    <link rel="stylesheet" href="plugins/magnific.popup.css">
+    <script src="plugins/jquery.min.js"></script>
+    <script src="plugins/jquery.bxslider.min.js"></script>
+    <script src="plugins/magnif.poup.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#slider').bxSlider({
+                mode: 'fade',
+                speed: '1000',
+                auto: true
+            });
+            $('#fotos').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                closeOnContentClick: false,
+                closeBtnInside: false,
+                mainClass: 'mfp-with-zoom mfp-img-mobile',
+                image: {
+                    verticalFit: true
+                },
+                gallery: {
+                    enabled: true
+                },
+                zoom: {
+                    enabled: true,
+                    duration: 300, // don't foget to change the duration also in CSS
+                    opener: function (element) {
+                        return element.find('img');
+                    }
+                }
+
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header id="cabecalho">
+        <div class="container">
+            <a href="#"><img src="../imagens/logo_site.png" alt="Logo Monster Hunters" id="logo"></a>
+            <nav>
+                <ul>
+                  <li><a href="../index.html" class="active">Home</a></li>
+                  <li><a href="../internas/monsters.html">Monstros</a></li>
+                  <li><a href="../internas/personagens.html">Personagens</a></li>
+                  <li><a href="../internas/historia.html">Historia</a></li>
+                  <li><a href="../internas/armas.html">armas</a></li>
+                  <li><a href="../internas/areas.html">Areas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="section">
+      <h3 class="conteudo-secundario-titulo">Monstros</h3>
+    </section>
+    <section id="personagens" class="center">
+      <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="../imagens/fotos/monstros/index_monster18.jpg" alt="Avatar" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <h1 class="conteudo-secundario-titulo">Amicão</h1>
+              <p class="conteudo-secundario-paragrafo">
+                Um Amicão destemido é o companheiro perfeito ao cavalgar para a batalha. Ele sobe aos céus e corta o vento com o arremesso de uma lâmina.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="../imagens/fotos/monstros/index_monster19.jpg" alt="Avatar" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <h1 class="conteudo-secundario-titulo">Nargacuga</h1>
+              <p class="conteudo-secundario-paragrafo">
+                Serpe Alada que evoluiu para viver e prosperar em áreas densamente arborizadas. Essa besta astuta persegue sua presa, das sombras, com velocidade feroz e obstinação.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="../imagens/fotos/monstros/index_monster20.jpg" alt="Avatar" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <h1 class="conteudo-secundario-titulo">Zinogre</h1>
+              <p class="conteudo-secundario-paragrafo">
+                Serpe de Presas que possui um manto de eletricidade pura e ataca com garras afiadas e músculos robustos.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="../imagens/fotos/monstros/index_monster21.jpg" alt="Avatar" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <h1 class="conteudo-secundario-titulo">Brachydios</h1>
+              <p class="conteudo-secundario-paragrafo">
+                Serpe Bruta revestida de uma substância verde e volátil. Sua saliva pode ser usada para acender esse revestimento, com resultados explosivos.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="../imagens/fotos/monstros/index_monster22 (1).jpg" alt="Avatar" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <h1 class="conteudo-secundario-titulo"> Seregios</h1>
+              <p class="conteudo-secundario-paragrafo">
+                Serpe Alada conhecida por suas brilhantes escamas douradas, que podem ser lançadas em direção à presa em ataques de alta velocidade.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="../imagens/fotos/monstros/index_monster23.jpg" alt="Avatar" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <h1 class="conteudo-secundario-titulo"> Tigrex</h1>
+              <p class="conteudo-secundario-paragrafo">
+                Com aparência primitiva, essa Serpe Alada é capaz de utilizar um rugido ensurdecedor. É um monstro conhecido por atacar a presa com membros, mandíbulas e garras temíveis.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
